@@ -1,0 +1,23 @@
+
+      <div class="container">
+        <div class="card-container">
+            <div *ngFor="let service of services" class="card">
+                <div class="card-area">
+                    <div class="card-media">
+                        <img [src]="service.picture" [alt]="service.name">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="title">{{service.name}}</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Voluptas cupiditate, natus nam et quae hic molestias quam nisi sequi.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <a class="button" [routerLink]="[service.id]">Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+

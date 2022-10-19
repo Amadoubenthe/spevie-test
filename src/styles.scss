@@ -1,1 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: #E7EBF0
+}
+
+.text-center{
+    text-align: center;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px gray;
+    margin: 10px;
+    // min-height: 300px;
+    /* cursor: pointer; */
+    
+}
+
+.card:hover {
+    box-shadow: 0px 13px 15px gray;
+  }
+
+img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-area{
+
+}
+
+.card-media{
+    min-height: 210px;
+}
+
+.card-content{
+    padding: 0 10px 10px 10px;
+    
+}
+
+p{
+    opacity: 0.60;
+}
+
+h2{
+    opacity: 0.80;
+    padding-bottom: 8px;
+}
+
+.card-actions{
+    padding: 0 10px 10px 10px;
+}
+
+.card-actions .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 2px;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  
