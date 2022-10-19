@@ -1,20 +1,26 @@
 
-<div class="container">
-    <div class="row">
-        <div class="col s12 m7">
-          <div class="card">
-            <div class="card-image">
-              <img [src]="service?.picture">
-              <span class="card-title">{{service?.name}} ddd</span>
-            </div>
-            <div class="card-content">
-              <p>{{service?.hp}}</p>
-            </div>
-            <div class="card-action">
-              <a href="#">{{service?.name}}</a>
-            </div>
-          </div>
+<div class="card-detail-container">
+  <h1>Details {{service?.name}}</h1>
+  <div class="card">
+
+    <div class="media">
+      <img [src]="service?.picture" [alt]="service?.name">
+    </div>
+
+    <div class="text">
+      <h2>{{service?.name}}</h2>
+      <div style="padding-top: 20px;">
+        <p>Types</p>
+        <div style="padding-left: 25px;">
+          <ul *ngFor="let type of service?.types">
+            <li>{{type}}</li>
+          </ul>
         </div>
+        <p style="padding-top: 25px;">
+          Creer le {{service?.created}}
+        </p>
       </div>
+    </div>
+
+  </div>
 </div>
-            
